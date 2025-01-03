@@ -101,6 +101,8 @@ trips_year2 %>%
   theme_bw() +
   labs(title="Number of Trips by Bicycle Type", x="Bicycle Type", y="Number of Rides")
 
+ggsave("num_trips_by_bike.png", plot=last_plot())
+
 #Total Rides by Bike Type By Member Type
 bike_member_summary <- trips_year2 %>%
   group_by(member_casual, rideable_type) %>%
@@ -129,6 +131,8 @@ ggplot(rides_by_day, aes(x=day_of_week, y=total_rides, fill=member_casual, color
     x = "Day of the Week",
     y = "Total Rides"
   )
+  
+  ggsave("rides_by_day_of_week.png", plot=last_plot())
 
 #Arrange Months in Order
 trips_year2$month <- ordered(trips_year2$month,
@@ -147,15 +151,14 @@ View(rides_month)
 ggplot(rides_month, aes(x=month, y=total_rides, fill=member_casual, color=member_casual)) +
   geom_bar(stat='identity', position='dodge') +
   theme_bw() +
-  labs(title="Number of Rides per Month", x="Month", y+"Number of Trips")
+  labs(title="Number of Rides per Month", x="Month", y="Number of Trips")
+
+ggsave("rides_by_month.png", plot=last_plot())
 
 #Identify Popular Start Stations By Member Type
 top_start_stations <- trips_year2 %>%
   group_by(start_station_name, member_casual) %>%
   summarize(total_rides=n()) %>%
-  arrange(desc(total_rides)) %>%
+  arrange(desc(total_rides))
   
 View(top_start_stations)
-
-
-
