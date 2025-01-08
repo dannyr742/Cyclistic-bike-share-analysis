@@ -88,6 +88,7 @@ ride_bike_summary <- trips_year2 %>%
 - Electric bikes are the most used type, particularly by members.
 - Classic bikes are also most often used by members.
 - Casual riders tend to use electric scooters more often than members.
+
 Visualization:
   ![Number of Trips by Bicycle Type](../visuals/num_trips_by_bike.png)
 
@@ -95,13 +96,15 @@ Visualization:
 Key insights:
 - Members use bikes consistently throughout the week, with slightly higher usage on weekdays.
 - Casual riders show a significant increase in usage on weekends.
+
 Visualization:
 ![Total Rides by Day of the Week](../visuals/rides_by_day_of_week.png)
 
 ### 3. Monthly Trends
 Key insights:
 - Usage peaksduring summer months (June to August) for both casual riders and members.
-- Casual riders show a steeper increase in summer usage, likely for leisure activities.
+- Casual riders show a steeper increase in summer usage, likely for leisure activities. 
+
 Visualization:
 ![Number of Rides per Month](../visuals/rides_by_month.png)
 
@@ -126,7 +129,8 @@ Casual Riders
 - Minimum Ride Length: 0.0008 minutes
 - Median: 12.00 minutes
 - Mean: 21.10 minutes
-- Maximum Ride Length: 1,500.52 minutes
+- Maximum Ride Length: 1,500.52 minutes 
+
 Member Riders
 - Minimum Ride Length: 0.0006 minutes
 - Median: 8.69 minutes
