@@ -18,11 +18,13 @@ members.
 memberships
 
 ## Data Description
-The dataset includes historical bike trip records provided by Cyclistic. Key
-features of the data include:
+The analysis is based on public data provided by [Divvy](https://divvy-tripdata.s3.amazonaws.com/index.html), a bike-share program in Chicago. The dataset includes detailed records of bike rides, such as:
 - Ride information: Start and end times, duration, and station names.
 - Bike types: Classic bikes, electric bikes, and electric scooters.
 - User types: Casual riders and annual members.
+
+The data can be accessed at the following link:
+- [Divvy Trip Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
 ## Data Cleaning Steps
 Combined monthly datasets into a single dataframe:
