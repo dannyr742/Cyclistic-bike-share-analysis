@@ -32,18 +32,18 @@ The analysis was conducted in RStudio using the following steps:
 
 ## Visualizations
 #### Number of Trips by Bicycle Type
-![Number of Trips by Bicycle Type](../visuals/num_trips_by_bike.png)
+![Number of Trips by Bicycle Type](visuals/num_trips_by_bike.png)
 
 #### Total Rides by Day of the Week
-![Total Rides by Day of the Week](../visuals/rides_by_day_of_week.png)
+![Total Rides by Day of the Week](visuals/rides_by_day_of_week.png)
 
 #### Number of Rides per Month
-![Number of Rides per Month](../visuals/rides_by_month.png)
+![Number of Rides per Month](visuals/rides_by_month.png)
 
 ## Findings
 1. Bike Usage by Type:
    - Electric bikes are the most used type, especially among members.
-   - Casual riders show a higher preference for classic bikes compared to members.
+   - Casual riders show a higher preference for electric scooters compared to members.
 2. Day of the Week Trends:
    - Members use bikes consistently throughout the week, with slightly higher usage on weekdays
    - Casual riders primarily use bikes on weekends.
